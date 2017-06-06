@@ -71,6 +71,24 @@ def run():
 	plt.title('Cost after each iterations')
 	plt.show()
 
+	plt.clf()
+
+	print 'Plotting dataset...'
+
+	x = array(points[:,0])
+	y = array(points[:,1])
+	#Plot dataset
+	plt.scatter(x, y)
+	#Predict y values
+	pred = m * x + b
+	#Plot predictions as line of best fit
+	plt.plot(x, pred, c='r')
+	plt.xlabel('Hours of study')
+	plt.ylabel('Test scores')
+	plt.title('Predicting test scores')
+	plt.show()
+
+
 if __name__ == '__main__':
 	run()
 
