@@ -57,14 +57,14 @@ def run():
 	[b, m, cost_graph] = gradient_descent_runner(points, initial_b, initial_m, learning_rate, num_iterations)
 
 	#Print optimized parameters
-	print 'Optimized b:', b
-	print 'Optimized m:', m
+	print ('Optimized b:', b)
+	print ('Optimized m:', m)
 
 	#Print error with optimized parameters
-	print 'Minimized cost:', compute_cost(b, m, points)
+	print ('Minimized cost:', compute_cost(b, m, points))
 
 	#Plot cost per iteration
-	print 'Plotting cost per iteration...'
+	print ('Plotting cost per iteration...')
 	plt.plot(cost_graph)
 	plt.xlabel('No. of iterations')
 	plt.ylabel('Cost')
@@ -73,7 +73,8 @@ def run():
 
 	plt.clf()
 
-	print 'Plotting dataset...'
+	#Plot dataset and line of best fit
+	print ('Plotting dataset...')
 
 	x = array(points[:,0])
 	y = array(points[:,1])
