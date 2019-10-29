@@ -35,11 +35,11 @@ plt.show()
 ![png](linear-regression-demo_files/linear-regression-demo_3_0.png)
 
 
-#### Defining the hyperparamters
+#### Defining the hyperparameters
 
 
 ```python
-#hyperparamters
+#hyperparameters
 learning_rate = 0.0001
 initial_b = 0
 initial_m = 0
