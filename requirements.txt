@@ -1,7 +1,7 @@
 cycler==0.10.0
 functools32==3.2.3.post2
 matplotlib==2.0.2
-numpy==1.12.1
+numpy==1.22.0
 pandas==0.20.1
 pyparsing==2.1.4
 python-dateutil==2.6.0
